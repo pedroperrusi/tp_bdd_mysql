@@ -1,0 +1,14 @@
+version: '2'
+services:
+  
+  mysql_bdd:
+    container_name: mysql_bdd
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'tis03pwd'
+    build: .
+    #    volumes:
+    #      - tps-bdd:/var/lib/mysql
+
+    #volumes:
+    #  tps-bdd:
