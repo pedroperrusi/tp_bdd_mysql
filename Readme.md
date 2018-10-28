@@ -8,18 +8,26 @@ mysql -u tis03 -h tps-mysql.u-strasbg.fr -p
     use TIS03
 ```
 
+Password: tis03pwd
+
 ### Docker MySQL Experiments
 Based on: 
+    - https://github.com/mysql/mysql-docker
+    - https://dev.mysql.com/doc/refman/5.7/en/docker-mysql-more-topics.html#docker-persisting-data-configuration
+    - https://docs.docker.com/compose/gettingstarted/#step-2-create-a-dockerfile
     - https://docs.docker.com/samples/library/mysql/#connect-to-mysql-from-an-application-in-another-docker-container
     - https://codereviewvideos.com/course/docker-tutorial-for-beginners/video/docker-mysql-tutorial
 
-* Server: 
+First, create and launch the SQL Server containter (named mysql\_bash).
 ```(bash)
-docker run --name td-bdd-mysql -e MYSQL_ROOT_PASSWORD=tis03pwd -d mysql:latest
+docker-compose up
 ```
-* Client:
+Then, start a new session in the container:
 ```(bash)
-docker run -it --link td-bdd-mysql:mysql --rm mysql sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"tis03pwd"'
+docker exec -it mysql_bdd bash
 ```
-
-docker run --rm -it $(docker build -q .)
+Finaly, log into the root of the repository to perform the database operations
+```(bash)
+mysql -uroot -p
+```
+Password: tis03pwd
