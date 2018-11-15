@@ -10,13 +10,15 @@ Password: tis03pwd
     use TIS03
 ```
 
-### Pour le TP 3
+### Pour le TP 4
 mysql -u worldUser -h tps-mysql.u-strasbg.fr -p
 Passsword: WUpwd!
 
 ```(sql)
     use World
 ```
+
+This database is also available online: https://webster.cs.washington.edu/cse154/query/
 
 ### Docker MySQL Experiments
 First, create and launch the SQL Server containter (named mysql\_bash).
