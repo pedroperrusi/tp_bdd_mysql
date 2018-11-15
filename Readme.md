@@ -14,6 +14,9 @@ Password: tis03pwd
 mysql -u worldUser -h tps-mysql.u-strasbg.fr -p
 Passsword: WUpwd!
 
+```(sql)
+    use World
+```
 
 ### Docker MySQL Experiments
 First, create and launch the SQL Server containter (named mysql\_bash).
