@@ -1,14 +1,19 @@
 # TP BDD: MySQL Databases
 
-### During Class
+### During Class TP 1 et 2
 to access the databases:
 mysql -u tis03 -h tps-mysql.u-strasbg.fr -p
+
+Password: tis03pwd
 
 ```(sql)
     use TIS03
 ```
 
-Password: tis03pwd
+### Pour le TP 3
+mysql -u worldUser -h tps-mysql.u-strasbg.fr -p
+Passsword: WUpwd!
+
 
 ### Docker MySQL Experiments
 First, create and launch the SQL Server containter (named mysql\_bash).
