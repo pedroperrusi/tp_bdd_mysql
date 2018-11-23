@@ -20,6 +20,15 @@ Passsword: WUpwd!
 
 This database is also available online: https://webster.cs.washington.edu/cse154/query/
 
+### Pour le test
+mysql -u tisexam -h tps-mysql.u-strasbg.fr -p
+
+Password: pwdExam
+
+```(sql)
+    use exam
+```
+
 ### Docker MySQL Experiments
 First, create and launch the SQL Server containter (named mysql\_bash).
 ```(bash)
