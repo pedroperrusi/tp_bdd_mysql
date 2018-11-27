@@ -1,6 +1,6 @@
 # TP BDD: MySQL Databases
 
-### During Class TP 1 et 2
+### TP 1 et 2
 to access the databases:
 mysql -u tis03 -h tps-mysql.u-strasbg.fr -p
 
@@ -10,7 +10,7 @@ Password: tis03pwd
     use TIS03
 ```
 
-### Pour le TP 4
+### TP 4
 mysql -u worldUser -h tps-mysql.u-strasbg.fr -p
 Passsword: WUpwd!
 
@@ -20,7 +20,7 @@ Passsword: WUpwd!
 
 This database is also available online: https://webster.cs.washington.edu/cse154/query/
 
-### Pour le test
+### Test
 mysql -u tisexam -h tps-mysql.u-strasbg.fr -p
 
 Password: pwdExam
